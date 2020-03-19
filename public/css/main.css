@@ -1,0 +1,300 @@
+/* form login */
+
+.p_120 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/* Main Button Area css
+============================================================================================ */
+.main_btn {
+  display: inline-block;
+  background: #c5322d;
+  padding: 0px 30px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 48px;
+  border: 1px solid #c5322d;
+  border-radius: 0px;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  text-align: center;
+  border: 1px solid #c5322d;
+  cursor: pointer;
+  -webkit-transition: all 300ms linear 0s;
+  -o-transition: all 300ms linear 0s;
+  transition: all 300ms linear 0s;
+  border-radius: 5px;
+}
+
+.main_btn:hover {
+  background: transparent;
+  color: #c5322d;
+}
+
+.main_btn2 {
+  display: inline-block;
+  background: #c5322d;
+  padding: 0px 32px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 38px;
+  border-radius: 0px;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  text-align: center;
+  border: 1px solid #c5322d;
+  cursor: pointer;
+  -webkit-transition: all 300ms linear 0s;
+  -o-transition: all 300ms linear 0s;
+  transition: all 300ms linear 0s;
+}
+
+.main_btn2:hover {
+  background: transparent;
+  color: #c5322d;
+}
+
+.submit_btn {
+  display: inline-block;
+  background: #c5322d;
+  padding: 0px 30px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 38px;
+  border: 1px solid #c5322d;
+  border-radius: 0px;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  text-align: center;
+  border: 1px solid #c5322d;
+  cursor: pointer;
+  -webkit-transition: all 300ms linear 0s;
+  -o-transition: all 300ms linear 0s;
+  transition: all 300ms linear 0s;
+}
+
+.submit_btn:hover {
+  background: transparent;
+  color: #c5322d;
+}
+
+.white_bg_btn {
+  display: inline-block;
+  background: #f9f9ff;
+  padding: 0px 35px;
+  color: #222222;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 34px;
+  border-radius: 0px;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  text-align: center;
+  border: 1px solid #eeeeee;
+  cursor: pointer;
+  -webkit-transition: all 300ms linear 0s;
+  -o-transition: all 300ms linear 0s;
+  transition: all 300ms linear 0s;
+}
+
+.white_bg_btn:hover {
+  background: #c5322d;
+  color: #fff;
+  border-color: #c5322d;
+}
+
+.org_btn {
+  padding: 0px 40px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f766a5), color-stop(51%, #f78762), to(#f766a5));
+  background-image: -webkit-linear-gradient(left, #f766a5 0%, #f78762 51%, #f766a5 100%);
+  background-image: -o-linear-gradient(left, #f766a5 0%, #f78762 51%, #f766a5 100%);
+  background-image: linear-gradient(to right, #f766a5 0%, #f78762 51%, #f766a5 100%);
+  background-size: 200% auto;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  line-height: 50px;
+  border-radius: 5px;
+}
+
+.org_btn:hover {
+  background-position: right center;
+  color: #fff;
+}
+
+.green_btn {
+  padding: 0px 40px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#73ca96), color-stop(51%, #98d370), to(#73ca96));
+  background-image: -webkit-linear-gradient(left, #73ca96 0%, #98d370 51%, #73ca96 100%);
+  background-image: -o-linear-gradient(left, #73ca96 0%, #98d370 51%, #73ca96 100%);
+  background-image: linear-gradient(to right, #73ca96 0%, #98d370 51%, #73ca96 100%);
+  background-size: 200% auto;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  line-height: 50px;
+  border-radius: 5px;
+}
+
+.green_btn:hover {
+  background-position: right center;
+  color: #fff;
+}
+
+/* End Main Button Area css
+=================================================================
+
+
+/* Login form Area css
+============================================================================================ */
+.login_box_area .login_box_img {
+  margin-right: -30px;
+  position: relative;
+}
+
+.login_box_area .login_box_img .hover {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  text-align: center;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.login_box_area .login_box_img .hover h4 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.login_box_area .login_box_img .hover p {
+  max-width: 380px;
+  margin: 0px auto 25px;
+  color: #fff;
+}
+
+.login_box_area .login_box_img .hover .main_btn {
+  border-radius: 0px;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+.login_form_inner {
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.07);
+  height: 100%;
+  text-align: center;
+  padding-top: 115px;
+}
+
+.login_form_inner h3 {
+  color: #222222;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 80px;
+}
+
+.login_form_inner .login_form {
+  max-width: 385px;
+  margin: auto;
+}
+
+.login_form_inner.reg_form {
+  padding-top: 60px;
+}
+
+.login_form_inner.reg_form h3 {
+  margin-bottom: 70px;
+}
+
+.login_form .form-group input {
+  height: 54px;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  border-radius: 0px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.login_form .form-group .creat_account {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.login_form .form-group .creat_account input {
+  height: auto;
+  margin-right: 10px;
+}
+
+.login_form .form-group .submit_btn {
+  display: block;
+  border-radius: 0px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.login_form .form-group a {
+  font-size: 14px;
+  color: #777777;
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  display: block;
+}
+
+/* End Login form Area css
+===============================================================================
+*/
+
+
+.btn-group .dropdown-item2 {
+display:block;
+width:100%;
+padding:.25rem 1.5rem !important;
+line-height: normal !important;
+font-size: 0.8rem !important;
+clear:both !important;
+font-weight:400 !important;
+color:#212529 !important;
+text-align:inherit !important;
+white-space:nowrap !important;
+background-color:transparent !important;
+border:0 !important;
+}
+
+.btn-group .dropdown-menu a:hover{
+	background-color: #e1eaea !important;
+	color: #ffc107 !important;
+}
+
