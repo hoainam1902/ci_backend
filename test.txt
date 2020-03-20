@@ -1,2 +1,2 @@
-test pull data
+test git status
 
