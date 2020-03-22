@@ -71,10 +71,10 @@ $route['account/signup'] = 'AccountController/signup';
 
 $route['user/login'] = 'user/LoginController/login';
 $route['user/logout'] = 'user/LoginController/logout';
-$route['dashboard/order'] = 'user/OrderController/index';
-$route['dashboard/order/edit/(:num)'] = 'user/OrderController/edit/$1';
-$route['dashboard/order/cancel/(:num)'] = 'user/OrderController/cancel/$1';
-$route['dashboard/order/show-details'] = 'user/OrderController/showDetails';
+$route['user/order'] = 'user/OrderController/index';
+$route['user/order/edit/(:num)'] = 'user/OrderController/edit/$1';
+$route['user/order/cancel/(:num)'] = 'user/OrderController/cancel/$1';
+$route['user/order/show-details'] = 'user/OrderController/showDetails';
 $route['user/profile'] = 'user/UserController/personalInfo';
 $route['user/change-password'] = 'user/UserController/changePassword';
 $route['user/update-profile'] = 'user/UserController/updateProfile';

@@ -53,3 +53,20 @@ function route($controller = '', $param = array())
 	}
 	return $url;
 }
+
+function isCurrentURLMathWith($controller)
+{
+	$requestArray = explode('/', $_SERVER["REQUEST_URI"]);
+	$total = (count($requestArray) - 1);
+	$segmentArray = explode('.', $controller);
+	if($total >= count($segmentArray)) {
+		for ($i = 1; $i >= 0 ; $i--) { 
+			if($segmentArray[$i] != $requestArray[$total]) {
+				return false;
+			}
+			$total -= 1;
+		}
+		return true;
+	}
+	return false;
+}

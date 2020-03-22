@@ -38,7 +38,7 @@
 			<div class="kt-aside-menu-wrapper kt-grid__item kt-grid__item--fluid" id="kt_aside_menu_wrapper">
 				<div id="kt_aside_menu" class="kt-aside-menu " data-ktmenu-vertical="1" data-ktmenu-scroll="1" data-ktmenu-dropdown-timeout="500">
 					<ul class="kt-menu__nav ">
-						<li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-icon fa fa-chart-bar"></i><span class="kt-menu__link-text">Dashboards</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+						<!-- <li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-icon fa fa-chart-bar"></i><span class="kt-menu__link-text">Dashboards</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
 							<div class="kt-menu__submenu "><span class="kt-menu__arrow"></span>
 								<ul class="kt-menu__subnav">
 									<li class="kt-menu__item  kt-menu__item--parent" aria-haspopup="true"><span class="kt-menu__link"><span class="kt-menu__link-text">Dashboards</span></span></li>
@@ -47,24 +47,24 @@
 									<li class="kt-menu__item " aria-haspopup="true"><a href="dashboards/aside-navy.html" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Navy Aside</span></a></li>
 								</ul>
 							</div>
-						</li>
+						</li> -->
+						 <!-- kt-menu__item--open kt-menu__item--active-->
 						
-						
-						<li class="kt-menu__item kt-menu__item--submenu kt-menu__item--open" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-icon flaticon-calendar"></i><span class="kt-menu__link-text">Order</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+						<li class="kt-menu__item kt-menu__item--submenu <?= isCurrentURLMathWith('user.order') ? 'kt-menu__item--open' : '' ?>" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-icon flaticon-calendar"></i><span class="kt-menu__link-text">Order</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
 							<div class="kt-menu__submenu "><span class="kt-menu__arrow"></span>
 								<ul class="kt-menu__subnav">
 									
-									<li class="kt-menu__item " aria-haspopup="true"><a href="<?= route('dashboard.order') ?>" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">My Order</span></a></li>
+									<li class="kt-menu__item <?= isCurrentURLMathWith('user.order') ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true"><a href="<?= route('user/order') ?>" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">My Order</span></a></li>
 									
 								</ul>
 							</div>
 						</li>
-						<li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-icon flaticon-diagram"></i><span class="kt-menu__link-text">My Account</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
+						<li class="kt-menu__item  kt-menu__item--submenu <?= (isCurrentURLMathWith('user.profile') || isCurrentURLMathWith('user.change-password')) ? 'kt-menu__item--open' : '' ?>" aria-haspopup="true" data-ktmenu-submenu-toggle="hover"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-icon flaticon-diagram"></i><span class="kt-menu__link-text">My Account</span><i class="kt-menu__ver-arrow la la-angle-right"></i></a>
 							<div class="kt-menu__submenu "><span class="kt-menu__arrow"></span>
 								<ul class="kt-menu__subnav">
 									<li class="kt-menu__item  kt-menu__item--parent" aria-haspopup="true"><span class="kt-menu__link"><span class="kt-menu__link-text">Account Info</span></span></li>
-									<li class="kt-menu__item " aria-haspopup="true"><a href="components/charts/google-charts.html" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Account Info</span></a></li>
-									<li class="kt-menu__item " aria-haspopup="true"><a href="components/charts/flotcharts.html" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Change Password</span></a></li>
+									<li class="kt-menu__item <?= isCurrentURLMathWith('user.profile') ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true"><a href="<?= route('user/profile') ?>" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Account Info</span></a></li>
+									<li class="kt-menu__item <?= isCurrentURLMathWith('user.change-password') ? 'kt-menu__item--active' : '' ?>" aria-haspopup="true"><a href="<?= route('user/change-password') ?>" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Change Password</span></a></li>
 									
 								</ul>
 							</div>

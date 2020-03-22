@@ -690,9 +690,9 @@ begin:: Footer -->
 
 <!--end::Page Vendors -->
 <script>
-	var editOrderURL = '<?= route('dashboard.order.edit/') ?>';
-	var cancelOrderURL = '<?= route('dashboard.order.cancel/') ?>';
-	var showDetailsURL = '<?= route('dashboard.order.show-details') ?>';
+	var editOrderURL = '<?= route('user.order.edit/') ?>';
+	var cancelOrderURL = '<?= route('user.order.cancel/') ?>';
+	var showDetailsURL = '<?= route('user.order.show-details') ?>';
 	var IMGURL = '<?= base_url() . 'uploads/product/' ?>';
 </script>
 <!--begin::Page Scripts(used by this page) -->
