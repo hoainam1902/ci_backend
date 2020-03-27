@@ -53,7 +53,6 @@ $route['default_controller'] = 'HomeController';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['admin/(:any)'] = "admin/auth/$1";
 $route['shop'] = 'ShopController/index';
 // $route['shop?category=(:any)'] = 'ShopController/showProductsOfBrand/$1';
 $route['category/(:any)/(:num)'] = 'viewShopCategory/$1/$2';
@@ -65,9 +64,10 @@ $route['cart/removeItem/(:num)'] = 'CartController/removeCartItem/$1';
 $route['cart/emptycart'] = 'CartController/emptycart';
 $route['checkout'] = 'OrderController/index';
 // $route['order/checkout'] = 'OrderController/checkout';
-$route['account/login'] = 'AccountController/login';
-$route['account/logout'] = 'AccountController/logout';
-$route['account/signup'] = 'AccountController/signup';
+
+// $route['account/login'] = 'AccountController/login';
+// $route['account/logout'] = 'AccountController/logout';
+// $route['account/signup'] = 'AccountController/signup';
 
 $route['user/login'] = 'user/LoginController/login';
 $route['user/logout'] = 'user/LoginController/logout';
@@ -78,5 +78,16 @@ $route['user/order/show-details'] = 'user/OrderController/showDetails';
 $route['user/profile'] = 'user/UserController/personalInfo';
 $route['user/change-password'] = 'user/UserController/changePassword';
 $route['user/update-profile'] = 'user/UserController/updateProfile';
+
+$route['admin/login'] = 'admin/AdminLoginController/login';
+$route['admin/logout'] = 'admin/AdminLoginController/logout';
+$route['admin/order'] = 'admin/OrderController/index';
+$route['admin/api/order'] = 'admin/OrderController/getAllOrder_json';
+$route['admin/api/users'] = 'admin/AccountController/apiGetAllUsers';
+$route['admin/my-account'] = 'admin/AccountController/myAccount';
+$route['admin/change-password'] = 'admin/AccountController/showChangePassword';
+$route['admin/doChangePassword'] = 'admin/AccountController/doChangePassword';
+$route['admin/update-profile'] = 'admin/AccountController/updateProfile';
+$route['admin/users'] = 'admin/AccountController/showTableUser';
 
 $route['(:any)'] = 'ProductController/index/$1';

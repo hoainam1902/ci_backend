@@ -100,3 +100,35 @@ Class MY_DashboardController extends MX_Controller
 		return false;
 	}
 }
+
+class MY_AdminController extends MX_Controller
+{
+
+	protected $data = array();
+
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->model('PublicAdminModel');
+		if(!$this->PublicAdminModel->isLogin()) {
+			header('Location: ' . route('admin.login'));
+			exit();
+		}
+		$this->data['title'] = '';
+		$this->load->library('admin_breadcrumb/DashboardBreadcrumbs');
+		if (file_exists(APPPATH . '/libraries/admin_breadcrumb/config-breadcrumbs.php')) {
+			include (APPPATH . '/libraries/admin_breadcrumb/config-breadcrumbs.php'); 
+		}
+	}
+
+	public function render($viewPath)
+	{
+		$this->data['view'] = $viewPath;
+		$this->load->view('layout/main', $this->data);
+	}
+
+	public function isAdminLogin()
+	{
+
+	}
+}

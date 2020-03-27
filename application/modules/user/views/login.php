@@ -7,7 +7,7 @@
 	<head>
 		<base href="<?= asset('user_dashboard/') ?>">
 		<meta charset="utf-8" />
-		<title>Keen | Login - v2</title>
+		<title>User | Login</title>
 		<meta name="description" content="User login example">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
